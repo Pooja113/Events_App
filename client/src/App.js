@@ -12,8 +12,12 @@ function App() {
       <Container maxWidth="lg" >
         <Navbar />
           <Routes>
-            <Route exact path='/' ><Home/></Route>
-            <Route exact path='/auth' ><Auth /></Route>
+            <Route exact path="/"  element={
+              <Home/>
+            } />
+            <Route exact path="/auth"  element={
+              <Auth/>
+            } />
           </Routes>
         
       </Container>
