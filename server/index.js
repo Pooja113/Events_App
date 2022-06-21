@@ -3,6 +3,8 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from 'cors';
 import postRoutes from './routes/posts.js'
+import userRoutes from './routes/user.js'
+
 import dotenv from 'dotenv'
 
 const app = express();
@@ -14,7 +16,8 @@ app.use(cors());
 
 
 
-app.use('/posts',postRoutes)
+app.use('/posts',postRoutes);
+app.use('/user',userRoutes)
 const DBCONNECTION_URI = process.env.DBCONNECTION_URI
 const PORT = process.env.PORT;
 mongoose.connect(DBCONNECTION_URI , { useNewUrlParser: true, useUnifiedTopology:true})
