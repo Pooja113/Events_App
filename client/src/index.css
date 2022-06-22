@@ -1,9 +1,19 @@
 
 body {
-    background-color: #f7f8fc;
+    background-color: #ec808a;
 }
 
 * {
     /* font-family: 'Noto Sans JP' !important; */
-    font-family: 'Heebo', sans-serif !important;
+    font-family: 'Cookie', cursive !important;
+}
+
+.MuiButton-containedPrimary{
+    background-color: #ee2d45 !important;
+}
+.MuiButton-containedPrimary:hover{
+    background-color: #e33f53 !important;
+}
+.MuiButton-label{
+    font-family: 'Fira Sans' !important;
 }

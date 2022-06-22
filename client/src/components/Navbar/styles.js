@@ -10,19 +10,25 @@ export default makeStyles((theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '10px 50px',
+    backgroundColor: '#f5f5f5',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
     },
+  },
+  appHeading:{
+    fontSize: '2rem',
+    fontWeight: 'bold',
+    color: '#000000',
+    'font-family':'Cookie'
   },
   heading: {
     color: theme.palette.primary.main,
     textDecoration: 'none',
     fontSize: '2em',
-    fontWeight: 300,
+    fontWeight: '300',
   },
   image: {
-    marginLeft: '10px',
-    marginTop: '5px',
+     marginRight: '10px',
   },
   toolbar: {
     display: 'flex',
@@ -54,6 +60,7 @@ export default makeStyles((theme) => ({
   brandContainer: {
     display: 'flex',
     alignItems: 'center',
+    textDecoration:'none'
   },
   purple: {
     color: theme.palette.getContrastText(deepPurple[500]),
