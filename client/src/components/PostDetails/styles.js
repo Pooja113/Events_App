@@ -19,7 +19,7 @@ export default makeStyles((theme) => ({
   section: {
     borderRadius: '20px',
     margin: '10px',
-    flex: 1,
+    // flex: 1,
   },
   imageSection: {
     marginLeft: '20px',
@@ -42,12 +42,12 @@ export default makeStyles((theme) => ({
     height: '39vh',
   },
   commentsOuterContainer: {
-    display: 'flex',
+    // display: 'flex',
     justifyContent: 'space-between',
   },
   commentsInnerContainer: {
-    height: '200px',
+    // height: '200px',
     overflowY: 'auto',
-    marginRight: '30px',
+    // marginRight: '30px',
   },
 }));

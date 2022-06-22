@@ -19,15 +19,15 @@ const Post = ({ post, setCurrentId }) => {
   const classes = useStyles();
 
   const userId = user?.result?._id;
-  const hasLikedPost = post.likes.find((like) => like === userId);
+  const hasLikedPost = post?.likes?.find((like) => like === userId);
 
   const handleLike = async () => {
     dispatch(likePost(post._id));
 
     if (hasLikedPost) {
-      setLikes(post.likes.filter((id) => id !== userId));
+      setLikes(post?.likes.filter((id) => id !== userId));
     } else {
-      setLikes([...post.likes, userId]);
+      setLikes([...post?.likes, userId]);
     }
   };
 
@@ -78,11 +78,11 @@ const Post = ({ post, setCurrentId }) => {
         </div>
         )}
         <div className={classes.details}>
-          <Typography variant="body2" color="textSecondary" component="h2">{post.tags.map((tag) => `#${tag} `)}</Typography>
+          <Typography variant="body2" color="textSecondary" component="h1">{post.tags.map((tag) => `#${tag} `)}</Typography>
         </div>
-        <Typography className={classes.title} gutterBottom variant="h5" component="h2">{post.title}</Typography>
+        <Typography className={classes.title} gutterBottom variant="h4" component="h1">{post.title}</Typography>
         <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">{post.message.split(' ').splice(0, 20).join(' ')}...</Typography>
+          <Typography variant="body2" className={classes.postdesc} color="textSecondary" component="p">{post.message.split(' ').splice(0, 20).join(' ')}...</Typography>
         </CardContent>
       </ButtonBase>
       <CardActions className={classes.cardActions}>

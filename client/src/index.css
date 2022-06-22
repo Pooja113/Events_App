@@ -10,10 +10,14 @@ body {
 
 .MuiButton-containedPrimary{
     background-color: #ee2d45 !important;
+    color: #fff !important;
 }
 .MuiButton-containedPrimary:hover{
     background-color: #e33f53 !important;
 }
-.MuiButton-label{
+.MuiButton-label,.MuiOutlinedInput-input{
     font-family: 'Fira Sans' !important;
 }
+/* {
+    font-size:3rem !important;
+} */

@@ -53,4 +53,8 @@ export default makeStyles({
     display: 'block',
     textAlign: 'initial',
   },
+  postdesc:{
+    fontSize:'1.3rem'
+
+  }
 });
